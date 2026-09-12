@@ -84,6 +84,13 @@ Answer + Source Citations
 - **No persistent storage** — uploaded files and the index are lost on restart.
 - **Single session** — designed for one user at a time.
 
+## Mocked / Simplified Components
+
+To keep the application simple and easy to run locally, the following components are mocked or simplified:
+- **Database**: There is no external database. The TF-IDF index and extracted text live entirely in-memory and will reset when the app restarts.
+- **Authentication**: There is no user login system. The app runs in a single-user mode locally.
+- **Vector Embeddings**: Instead of using heavy embeddings (like OpenAI embeddings) and a vector database (like Pinecone or FAISS), retrieval is done locally using a lightweight, pure-Python TF-IDF implementation.
+
 ## Demo
 
 You can demonstrate the full workflow in under 90 seconds:
