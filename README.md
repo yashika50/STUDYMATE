@@ -24,7 +24,15 @@ Upload your slides, click process, and ask away — StudyMate finds the relevant
 | LLM          | Gemini API (optional)|
 | Config       | python-dotenv       |
 
-## How to Run
+## Quick Start (Windows)
+
+Just double-click **`run.bat`** — it installs dependencies and launches the app automatically.
+
+The app opens at **http://localhost:8501**.
+
+---
+
+## How to Run (Manual)
 
 ```bash
 # 1. Install dependencies
@@ -43,6 +51,7 @@ streamlit run app.py
 ```
 
 The app opens at **http://localhost:8501**.
+
 
 ### Configuring the Gemini API key
 
